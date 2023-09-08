@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+* {
+    font-family: sans-serif;
+  
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+h3 {
+    color: rgb(255, 0, 0)
+}
+
+h5 {
+    font-size: 16px;
+    margin: 20px;
+    text-decoration: underline;
+    padding: 15px;
+}
+
+p {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+body {
+    background-color: rgb(174, 174, 194);
+}
+
+#logo_atom {
+    height: 20px;
+}
+
+.cabecera {
+    background-image: url(../image/barra-azul.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(7, 7, 49);
+    align-items: center;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.barra_navegacion {
+    background-color: rgb(7, 7, 49);
+    font-size: 20px;
+    min-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    }
+
+.barra_navegacion a {
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    text-decoration: none;
+    min-height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones_barra {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex: 1 1;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+}
+
+.botones_barra:hover {
+    color: black;
+    background-color: rgb(174, 174, 194);
+}
+
+.contenedor_cuerpo {
+    color: black;
+    display: flex;
+    flex: 1 1;
+}
+
+.seccion {
+    color: black;
+    box-sizing: border-box;
+}
+
+.lista {
+    margin-left: 30px;
+    list-style:none;
+    padding-left: 40px;
+}
+
+.lista li {
+    background-image: url(../image/atom_logo_icon_247538.ico); 
+    background-repeat: no-repeat; 
+    background-size: 16px 16px;
+    background-position: 0 50%; 
+    padding-left: 20px; 
+    margin-bottom: 8px; 
+}
+
+.lateral {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../image/fondo-simple-azul-cian.avif);
+    box-sizing: border-box;
+}
+
+.lista_lateral_enlaces li{
+    color: white; 
+    margin-left: 25px;
+       
+}
+
+.lista_lateral_enlaces a{
+    color: white;
+    margin-left: 25px;    
+}
+
+.pie_pagina {
+    color: #fff;
+    background-color: rgba(7, 7, 49);
+}
