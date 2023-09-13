@@ -16,3 +16,12 @@ Se efectuaron cambios mayores en casi todos los archivos, algunos aun cuentan un
 Falta corregir los .css de los archivos index, alcance y acerca_de_nosotros .html. El elemento css .lateral debe tener el ancho minimo de 230px.
 Falta corregir en todos los archivos el <footer>, se deberia agregar los iconos que se encuentran en la carpeta imagenes del proyecto y acomodar los enlaces a politicas de privacidad, contacto y terminos de servicio.
 Falta corregir en todos los archivos el titulo de la pagina, queda desfazado con respecto al titulo de soluciones informaticas. 
+
+13 sep 23 > > > 
+
+Se realizo la codificacion de los archivos .html que faltaban, y se arreglo el nombre de un archivo .css equivocado.
+Se corrigieron los archivos .css
+Se corrigieron los titulos desfazados.
+Se corrigieron las rutas de los archivos a medida que se probaban.
+
+Falta todavia agregar los iconos y arreglar el <footer> como asi tambien los enlaces de politicas de privacidad, contacto y terminos de servicio.
