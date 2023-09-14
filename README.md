@@ -25,3 +25,5 @@ Se corrigieron los titulos desfazados.
 Se corrigieron las rutas de los archivos a medida que se probaban.
 
 Falta todavia agregar los iconos y arreglar el <footer> como asi tambien los enlaces de politicas de privacidad, contacto y terminos de servicio.
+Corregir la pagina terminos_de_servicio.html
+correogir los titulos de politicas de privacidad, contacto y terminos de servicio.
