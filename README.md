@@ -27,3 +27,11 @@ Se corrigieron las rutas de los archivos a medida que se probaban.
 Falta todavia agregar los iconos y arreglar el <footer> como asi tambien los enlaces de politicas de privacidad, contacto y terminos de servicio.
 Corregir la pagina terminos_de_servicio.html
 correogir los titulos de politicas de privacidad, contacto y terminos de servicio.
+
+14 Sep 23 > > > 
+
+Se optimizaron los codigos de los archivos .css y se armo el codigo de los archivos .html restantes.
+
+Falta todavia agregar los iconos y arreglar el <footer> como asi tambien los enlaces de politicas de privacidad, contacto y terminos de servicio.
+
+Falta poner el contenido en productos.html, servicios.html y contacto.html
