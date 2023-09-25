@@ -35,3 +35,21 @@ Se optimizaron los codigos de los archivos .css y se armo el codigo de los archi
 Falta todavia agregar los iconos y arreglar el <footer> como asi tambien los enlaces de politicas de privacidad, contacto y terminos de servicio.
 
 Falta poner el contenido en productos.html, servicios.html y contacto.html
+
+17 Sep 23 > > > 
+
+Se corrigieron algunas vinculos, nombres de id y clases de css.
+de corrigio el footer.
+
+23 Sep 23 > > > 
+
+Se agrego al proyecto Bootstrap.
+Se arreglo la barra de redes.
+Se agrego el formulario de contacto.
+Se corrigio contenido en soporte.html, politicas de privacidad.html
+
+24 Sep 23 > > > 
+
+Se arreglo el responsive del proyecto.
+Se agrego la barra de redes al resto de los archivos html.
+Se arreglaron los archivos conacto.css, productos.css e index.css
