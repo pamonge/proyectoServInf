@@ -53,3 +53,8 @@ Se corrigio contenido en soporte.html, politicas de privacidad.html
 Se arreglo el responsive del proyecto.
 Se agrego la barra de redes al resto de los archivos html.
 Se arreglaron los archivos conacto.css, productos.css e index.css
+
+16 Oct 23 > > > 
+
+Se agregó la funcionalidad de JS al formulrio de contacto.
+instalacion de 'nodemailer'.
