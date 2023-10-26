@@ -58,3 +58,7 @@ Se arreglaron los archivos conacto.css, productos.css e index.css
 
 Se agregó la funcionalidad de JS al formulrio de contacto.
 instalacion de 'nodemailer'.
+
+26 Oct > > > 
+
+Se logro hacer que mande el correo (API FormSubmit) , se arregló la validación de JS.
