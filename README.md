@@ -62,3 +62,7 @@ instalacion de 'nodemailer'.
 26 Oct > > > 
 
 Se logro hacer que mande el correo (API FormSubmit) , se arregló la validación de JS.
+
+28 Oct 23 > > >
+
+Se implemento el corrousel de imagenes al sitio web.
