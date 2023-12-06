@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3fdd1cec9c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/tienda.css">
+  <link rel="icon" type="image/png" href="./resources/favicon.svg">
+  <title>MOBI</title>
+</head>
+
+<body>
+  <header id="sticky-header">
+    <marquee class="marquesina" srollamount="100" direction="left">
+      <p class="pnegro"><strong>COMBO CELU NUEVO + PACK DE INTERNET 40% DE DESCUENTO SOLO POR ESTE MES // TODAS LAS
+          MARCAS EN SMARTPHONES EN CUOTAS SIN INTERÉS CON TARJETA DE CRÉDITO // APROVECHÁ LOS DESCUENTOS EN PACKS DE
+          INTERNET TRAYENDO TU NÚMERO</strong></p>
+    </marquee>
+
+    <div class="c__navbar">
+      <ul class="menu">
+        <li><a href="./index.html">INICIO</a></li>
+        <li><a href="#" class="active">TIENDA</a></li>
+      </ul>
+      <div class="c__logo">
+        <p>M</p>
+        <i class="fa-regular fa-gem"></i>
+        <p>BI</p>
+      </div>
+      <ul>
+        <li><a href="./packs.html">PACKS</a></li>
+        <li><a href="./contacto.html">CONTACTO</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="menu-toggle"></i>
+    </div>
+  </header>
+
+  <!--Menú responsive-->
+
+  <div class="r__menu">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="c__logo">
+      <p>M</p>
+      <i class="fa-regular fa-gem"></i>
+      <p>BI</p>
+    </div>
+    <ul class="menu">
+      <li><a href="./index.html">INICIO</a></li>
+      <li><a href="#" class="active">TIENDA</a></li>
+      <li><a href="./packs.html">PACKS</a></li>
+      <li><a href="./contacto.html">CONTACTO</a></li>
+    </ul>
+  </div>
+
+  <!-- Area promocional -->
+  <div class="areaPromocional">
+    <section class="slider">
+
+      <div class="slide active">
+        <img src="./resources/promo1.webp" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="./resources/promo2.webp" alt="">
+      </div>
+
+      <div class="slide">
+        <img src="./resources/promo3.webp" alt="">
+      </div>
+
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">.
+        <div class="slideIcon active"></div>
+        <div class="slideIcon"></div>
+        <div class="slideIcon"></div>
+        <div class="slideIcon"></div>
+      </div>
+    </section>
+
+    <div class="c__cabeceraTienda">
+      <div class="cabeceraTienda">
+        <h1>Tienda M<i class="fa-regular fa-gem"></i>BI</h1>
+        <button>Ver carrito <i class="fa-solid fa-cart-shopping"><span id="carritoContador"
+              class="carritoContador">0</span></i></button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div id="miModal" class="modal">
+      <div class="modal-contenido ventana-emergente">
+        <span class="cerrar-modal" id="cerrarModal">&times;</span>
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito-modal">
+          <!-- Los productos seleccionados se agregarán acá -->
+        </ul>
+        <p class="pTotal">Total: <span id="total-modal">0</span></p>
+        <button class="comprar">COMPRAR TODO</button>
+      </div>
+    </div>
+
+    <section class="tienda">
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola Edge</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$210</p>
+          <button class="agregarCarrito" data-img="./resources/MotoEdge/1.webp"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/GalaxyZFold/1.webp" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Galaxy ZFold 5</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$450</p>
+          <button class="agregarCarrito" data-img="./resources/GalaxyZFold/1.webp"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Xaomi 13 Pro/1.jpg" alt="">
+          <p class="etiquetaProducto">NUEVO</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Xiaomi 13 Pro</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$360</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i>Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/3.jpg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 15</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$980</p>
+          <button class="agregarCarrito" data-img="./resources/iPhone 15/3.jpg"><i
+              class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Galaxy S21/Samsung.jpg" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Galaxy S21</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$570</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Poco X4 Pro/PocoX4.jpeg" alt="">
+          <p class="etiquetaProducto">40%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Poco X4 Pro</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$390</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Umidigi A11 Pro/UA11.jpg" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Umidigi A11 Pro</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$410</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Umidigi A11 Pro/BisonX.jpg" alt="">
+          <p class="etiquetaProducto">20%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Umidigi Bison X</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$560</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/iPhone 15/14 Pro Max.avif" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>IPhone 14 Pro Max</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$850</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/MotoEdge/G32.jpg" alt="">
+        </div>
+        <div class="infoProducto">
+          <h2>Motorola G32</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$530</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Galaxy S21/S22.png" alt="">
+          <p class="etiquetaProducto">10%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Galaxy S22</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$640</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="fotoProducto">
+          <img src="./resources/Poco X4 Pro/x5.jpeg" alt="">
+          <p class="etiquetaProducto">10%<br>OFF</p>
+        </div>
+        <div class="infoProducto">
+          <h2>Poco X5</h2>
+          <p class="caracteristicas">4GB de RAM, 64GB almacenamiento, Pantalla 6 pulgadas 1080x1920
+            Full HD Tecnología Amoled.</p>
+          <p class="precioProducto">$570</p>
+          <button class="agregarCarrito"><i class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
+        </div>
+      </div>
+    </section>
+
+    <div id="cotizacion">
+      <h5>Podrás consultar el precio de cualquiera de nuestros productos en dólares. Aquí la cotización al día <span
+          id="fecha"></span></h5>
+      <br>
+    </div>
+
+    <img src="./resources/bannerPromoGrande.png" alt="" class="bannerPromo">
+
+    <div class="miniBanners">
+      <img src="./resources/miniBanner1.png" alt="">
+      <img src="./resources/miniBanner2.png" alt="">
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="c__footer">
+      <div class="siteMap">
+        <h3>Mapa del sitio</h3>
+        <a href="">INICIO</a>
+        <a href="">TIENDA</a>
+        <a href="">PACKS</a>
+        <a href="">CONTACTO</a>
+        <a href="">FAQS</a>
+      </div>
+
+      <div class="map">
+        <h3>Ubicación</h3>
+        <div class="imgmap"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.5583076628997!2d-58.383073335817855!3d-34.59236440595771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3e15427879%3A0x5235f28d7ff3853b!2sGaleria%20magna!5e0!3m2!1ses-419!2sar!4v1697507283306!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+      <div class="redes">
+        <h3>Redes Sociales</h3>
+        <div class="c_redes">
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-regular fa-envelope fa-xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="linea"></div>
+    Copyright ERROR 404 &COPY;2023
+    <br>
+    <div class="letraschicas">Aviso Legal | Accesibilidad | Avisos de incidencias | Privacidad</div>
+  </footer>
+  <script src="../js/scriptTienda.js"></script>
+  </body>
+</html>
