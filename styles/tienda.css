@@ -690,7 +690,7 @@ main {
 }
 
 .tienda .producto .agregarCarrito {
-  width: 170px;
+  width: 180px;
   align-self: center;
   padding: 10px 10px;
   background: #ff009d;
@@ -766,6 +766,11 @@ main {
   font-size:small;
   margin-bottom: 10px;
 }
+
+.pie_pagina {
+  padding: 20px 0;
+}
+
 .c_redes{
   cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
 }
