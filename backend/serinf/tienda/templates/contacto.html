@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="https://formsubmit.co/98feaa0ab2e981f75bc4a197899b4c72" method="POST" id="formulario">
+    <fieldset>
+        <legend>Formulario de contacto</legend>
+           <dotlottie-player src="https://lottie.host/dd174f25-61ba-44aa-a063-21d12a0fc103/xxGMeTKdQZ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Para:</label>
+            <div class="col-sm-10">
+                <input type="text" 
+                readonly class="form-control-plaintext" 
+                id="staticEmail"
+                value="soporte@bytecrafters.com">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Ingrese su Nombre y Apellido</label>
+            <input id="nombre" 
+            type="text" 
+            name="name"
+            class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="mail" class="form-label">Ingrese su correo electrónico</label>
+            <input id="mail" 
+            type="mail" 
+            name="mail"
+            class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="asunto" class="form-label">Asunto</label>
+            <input id="asunto" 
+            type="text" 
+            name="subject"
+            class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="textareaMensaje" class="form-label">Ingrese el mensaje</label>
+            <textarea class="form-control" 
+            id="textareaMensaje" 
+            rows="3" 
+            type="text" 
+            name="comments" aria-hidden="true"></textarea>
+        </div>
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkNoSoyRobot">
+                <label class="form-check-label" for="checkNoSoyRobot">
+                    No soy un robot.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkTermYPolPriv">
+                <label class="form-check-label" for="checkTermYPolPriv">
+                    Acepto los <a href="{% url 'terminos-de-servicio' %}">terminos de servicio</a> y <a
+                        href="{% url 'politicas-de-privacidad' %}">politicas de privacidad</a> .
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
+
+{% endblock %}

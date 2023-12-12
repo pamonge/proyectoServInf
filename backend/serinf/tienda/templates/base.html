@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="shortcup icon" type="image/x icon" href="../image/global.ico" />
-    <link rel="stylesheet" type="text/css" href="../styles/index.css" />
-    <link rel="stylesheet" type="text/css" href="../bootstrap5/css/bootstrap.min.css" />
+    {% load static %}
+    <link rel="global.ico" rel="shortcup icon" type="image/x icon" href="{% static 'tienda/image/global.ico' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tienda/styles/index.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'tienda/bootstrap5/css/bootstrap.min.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>{% block title %} {% endblock %} ByteCrafters</title>
 </head>
+
 <body>
     <header class="cabecera">
         <h1 id="titulo_principal">ByteCrafters</h1>
         <h3 id="titulo_secundario">Soluciones Informáticas</h3>
     </header>
-    <section class="seccion">
-        <h5>Formulario de Registro de Usuario</h5>
-        <div class="contenedor_cuerpo flex-column col-3 text-center">
-            
-            {% block content %}
-            
-            {% endblock %}
 
-                 <!-- pages/register.html
-
-            <form action="">
-                <label for="user_name">Usuario</label><br>
-                <input name="user_name" type="text" placeholder="correo@proveedor.com"><br>
-                <label for="password">Ingrese la contraseña</label><br>
-                <input name="password" type="text" placeholder="********"><br>
-                <input type="checkbox" name="terminos_servicio" id="">Acepto los terminos del servicio.<br>
-                <input type="checkbox" name="politicas_privacidad" id="">Acepto las politicas de privacidad.<br>
-                <a href="./tienda.html">
-                    <button class="botones_barra">Registrar</button>
+    <div class="contenedor_cuerpo">
+        <aside class="lateral">
+            <nav class="barra_navegacion">
+                <a href="{% url 'home' %}">
+                    <button class="botones_barra">Inicio</button>
+                  </a>
+                <a href="{% url 'acerca-de-nosotros' %}">
+                    <button class="botones_barra">Acerca de nosotros</button>
                 </a>
-            </form>  -->
-            <a href="./login.html">
-                <button>Volver</button>
-            </a>
-        </div>
-    </section>
-
+                <a href="{% url 'alcance' %}">
+                    <button class="botones_barra">Alcance</button>
+                </a>
+                <a href="{% url 'productos' %}">
+                    <button class="botones_barra">Productos</button>
+                </a>
+                <a href="{% url 'servicios' %}">
+                    <button class="botones_barra">Servicios</button>
+                </a>
+                <a href="{% url 'signin' %}">
+                    <button class="botones_barra">Tienda</button>
+                </a>
+                <a href="{% url 'contacto' %}">
+                    <button class="botones_barra">Contacto</button>
+                </a>
+            </nav>
+        </aside>
+        <section class="seccion">
+            {% block content %}{% endblock %}
+        </section>
+    </div>
     <footer class="pie_pagina">
         <div>
             <h5>ByteCrafters</h5>
@@ -56,13 +63,13 @@
             <br /><br />
             <ul id="lista_footer">
                 <td>
-                    <a href="./pages/terminos_de_servicio.html">Términos del Servicio</a>
+                    <a href="{% url 'terminos-de-servicio' %}">Términos del Servicio</a>
                 </td>
                 <td>
-                    <a href="./pages/politicas_de_privacidad.html">Políticas de Privacidad</a>
+                    <a href="{% url 'politicas-de-privacidad' %}">Políticas de Privacidad</a>
                 </td>
-                <td><a href="./pages/soporte.html">Soporte</a></td>
-                <td><a href="./pages/contacto.html">Contáctenos</a></td>
+                <td><a href="{% url 'soporte' %}">Soporte</a></td>
+                <td><a href="{% url 'contacto' %}">Contáctenos</a></td>
             </ul>
             <!-- Importado de Bootstrap -->
             <nav id="redes" class="text-center text-white">
@@ -107,6 +114,7 @@
             </iframe>
         </div>
     </footer>
-    <script src="../js/register.js"></script>
+    <script src="{% static 'tienda/bootstrap5/js/bootstrap.min.js' %}"></script>
 </body>
+
 </html>
