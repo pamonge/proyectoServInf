@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+{% load static %}
 <section class="seccion">
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -14,7 +14,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./image/hombre-negocios-usando-dispositivos-tecnologia-e-iconos-interfaz-linea-delgada.avif"
+                <img src="{% static 'tienda/image/hombre-negocios-usando-dispositivos-tecnologia-e-iconos-interfaz-linea-delgada.avif' %}"
                     class="d-block w-100" alt="Asesoramiento y asistencia">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Asistencia y Asesoramiento</h5>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./image/experiencia-programacion-persona-que-trabaja-codigos-computadora.avif"
+                <img src="{% static 'tienda/image/experiencia-programacion-persona-que-trabaja-codigos-computadora.avif' %}"
                     class="d-block w-100" alt="Servicios">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Nuestros Servicios</h5>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./image/prod-tecnologicos.avif" class="d-block w-100" alt="Productos">
+                <img src="{% static 'tienda/image/prod-tecnologicos.avif' %}" class="d-block w-100" alt="Productos">
                 <div class="carousel-caption d-none d-md-block text_carrousel">
                     <h5>Nuestros Productos</h5>
                     <p>En nuestros locales podrá encontrar toda clase de productos de Herdware y Software para
