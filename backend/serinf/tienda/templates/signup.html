@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Signup</h1>
+<h5>Registro de Usuario nuevo</h5>
 
 {{error}}
 
@@ -10,8 +10,11 @@
     {% csrf_token %}
     {{form.as_p}}
     <button>
-        Signup
+        Registrarme!
     </button>
 </form>
+<button>
+    <a href="{% url 'signin' %}">Volver</a>
+</button>
 
 {% endblock %}

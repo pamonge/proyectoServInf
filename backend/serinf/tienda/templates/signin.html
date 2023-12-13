@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<h1>Signin</h1>
+<h5>Logueo de Usuario</h5>
 
 {{error}}
 
@@ -14,9 +14,10 @@
     {% csrf_token%}
     {{form.as_p}}
     <button>
-        Signin
+        Ingresar
     </button>
 </form>
+<p>Si no posee usuario <a href="{% url 'signup' %}" >regístrese</a></p>
 
 {% endblock %}
 
