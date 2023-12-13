@@ -73,7 +73,7 @@
         {% endif %}
       </div>
     </div>
-
+    
     <section class="tienda">
       <div class="producto">
         <div class="fotoProducto">
@@ -92,30 +92,22 @@
           <button class="agregarCarrito"><i
               class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
         </div>
-      </div>
 
-      <div class="producto">
+      {% for product in productos %}
+      </div>
+        <div class="producto">
         <div class="fotoProducto">
-          <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/160/892/products/img_58381-474cf68100f32c255716845136334879-1024-1024.webp" alt="">
+          <img src="{{product.image}}" alt="">
         </div>
         <div class="infoProducto">
-          <h2>Pc Escritorio i3</h2>
-          <p class="caracteristicas">Procesador: Intel Core i3
-            Memoria: 8Gb
-            Disco rigido 1Tb (1000Gb) o solido ssd 250gb segun stock o eleccion del comprador
-            Gabinete con fuente de 500 W con teclado y mouse
-            Gráficos: Onboard
-            Salida de video
-            Sonido: 5.1 Ch
-            Red Onboared Ethernet 10/100/1000 Gigabit
-            
-            Incluye Monitor led 19" (18.5) Primera marca
-            Sistema operativo Windows 10</p>
-          <p class="precioProducto">$450</p>
+          <h2>{{product.nombre}}</h2>
+          <p class="caracteristicas">{{product.descripcion}}</p>
+          <p class="precioProducto">{{product.precio}}</p>
           <button class="agregarCarrito"><i
               class="fa-solid fa-cart-arrow-down"></i></i>Agregar al carrito</i></button>
         </div>
       </div>
+      {% endfor %}
 
       <div class="producto">
         <div class="fotoProducto">

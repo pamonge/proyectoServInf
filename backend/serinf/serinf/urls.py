@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from tienda import views
+from inventario import views as inventario_views
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,9 +31,13 @@ urlpatterns = [
     path('productos/', views.productos, name='productos'),
     path('servicios/', views.servicios, name='servicios'),
     path('signup/', views.signup, name='signup'),
-    path('store/', views.store, name='store'),
+    path('store/', inventario_views.store, name='store'),
     path('soporte/', views.soporte, name='soporte'),
     path('signin/', views.signin, name='signin'),
     path('logout/', views.signout, name='logout'),
     path('producto/', include('inventario.urls')),  # Inventario API
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
