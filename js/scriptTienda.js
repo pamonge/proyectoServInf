@@ -148,7 +148,7 @@ function agregarAlCarrito(producto, precio, imagen, caracteristicas) {
     const contenedorInfo = document.createElement('div');
 
     // Crea un párrafo para el nombre del producto
-    const nombreProducto = document.createElement('p');
+    const nombreProducto = document.createElement('h5');
     nombreProducto.textContent = producto;
 
     // Crea un párrafo para las características
@@ -157,7 +157,7 @@ function agregarAlCarrito(producto, precio, imagen, caracteristicas) {
     parrafoCaracteristicas.textContent = `Características: ${caracteristicas}`;
 
     // Crea un párrafo para el precio
-    const precioProducto = document.createElement('p');
+    const precioProducto = document.createElement('h5');
     const precioFormateado = '$' + precio.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0});
     precioProducto.textContent = precioFormateado;
 

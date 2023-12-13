@@ -514,7 +514,7 @@ main {
 
 .modal-contenido {
   background-color: #fff;
-  margin: 15% auto;
+  margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid var(--clr-turquesa);
@@ -525,7 +525,7 @@ main {
 }
 
 .modal-contenido img {
-  width: 100px;
+  width: 200px;
   border-radius: 10px;
   border: 1px solid var(--clr-turquesa);
   margin-right: 10px;
@@ -543,6 +543,8 @@ main {
 
 .modal-contenido p {
   font-weight: 700;
+  height: 100px;
+  overflow-y: scroll;
 }
 
 .modal-contenido .cr {
@@ -571,6 +573,8 @@ main {
   font-weight: 900;
   margin-top: 40px;
   text-align: center;
+  overflow: hidden;
+  max-height: 30px;
 }
 
 .modal-contenido ul {
@@ -617,8 +621,9 @@ main {
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .tienda .producto {
