@@ -4,10 +4,12 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
+"""
 # Vista de Productos
 from rest_framework import viewsets
 from .serializer import ProductosSerializer
 from .models import Producto
+"""
 
 # Create your views here.
 
@@ -56,6 +58,7 @@ def signup(request):       #==> fusionar con register.html
             try:
                 #registro usuario
                 user = User.objects.create_user(username = request.POST['username'], password= request.POST['password1'])
+                print(user)
                 user.save()
                 login(request, user)
                 return redirect('store')
@@ -84,9 +87,3 @@ def store(request):        #==> fusionar con tienda.html
 def signout (request):
     logout (request)
     return redirect('home')
-
-# Vista de Productos
-
-class ProductoView (viewsets.ModelViewSet):
-    serializer_class = ProductosSerializer
-    queryset = Producto.objects.all()

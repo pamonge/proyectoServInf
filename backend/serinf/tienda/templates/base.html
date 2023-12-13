@@ -36,12 +36,21 @@
                 <a href="{% url 'servicios' %}">
                     <button class="botones_barra">Servicios</button>
                 </a>
-                <a href="{% url 'signin' %}">
+                <a href="{% url 'store' %}">
                     <button class="botones_barra">Tienda</button>
                 </a>
                 <a href="{% url 'contacto' %}">
                     <button class="botones_barra">Contacto</button>
                 </a>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}">
+                    <button class="botones_barra">Cerrar Sesión</button>
+                </a>
+                {% else %}
+                <a href="{% url 'signin' %}">
+                    <button class="botones_barra">Iniciar Sesión</button>
+                </a>
+                {% endif %}
             </nav>
         </aside>
         <section class="seccion">

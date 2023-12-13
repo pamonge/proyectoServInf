@@ -33,5 +33,5 @@ urlpatterns = [
     path('soporte/', views.soporte, name='soporte'),
     path('signin/', views.signin, name='signin'),
     path('logout/', views.signout, name='logout'),
-    path('tienda/', include('tienda.urls')),  # CRUD API
+    path('producto/', include('inventario.urls')),  # Inventario API
 ]
