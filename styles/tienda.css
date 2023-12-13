@@ -682,6 +682,9 @@ main {
 .tienda .producto .caracteristicas {
   font-size: 0.8em;
   margin-bottom: 7px;
+  height: 200px;
+  overflow-y: scroll;
+
 }
 
 .tienda .producto .precioProducto {
